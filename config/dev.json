@@ -1,0 +1,20 @@
+{
+    "port": 3003,
+    "MsSqlDbConfig": {
+        "user": "root",
+        "password": "root",
+        "host": "127.0.0.1",
+        "dbname": "test",
+        "dialect": "mysql"
+    },
+    "hostAddress": "http://0.0.0.0:3001/",
+    "jwtSecret": "iliketestsapp",
+    "jwtOptions": {
+        "expiresIn": "10h"
+    },
+    "encryption": {
+        "algorithm": "aes-256-ctr",
+        "password": "node@crypto123#-encryption"
+    },
+    "emailApiKey": "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"
+}

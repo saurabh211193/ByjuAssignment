@@ -1,0 +1,48 @@
+<div class="my-5 login-page">
+    <div class="bg-ctrl"></div>
+    <div class="form-login">
+        <div class="text-center">
+            <img src="/assets/images/qfc-png.png">
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="login()">
+            <div class="inn-form">
+                <!-- <h2 class="text-center">Sign In</h2> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-qfc-input>
+                            <label label class="form-control-placeholder" for="name">Name</label>
+                            <input input type="text" class="form-control login" formControlName="name" required>
+                            <span error class="error" *ngIf="formErrors.name">{{formErrors.name}}</span>
+                        </app-qfc-input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-qfc-input>
+                            <label label class="form-control-placeholder" for="name">Email Id</label>
+                            <input input type="text" class="form-control login" formControlName="email" required>
+                            <span error class="error" *ngIf="formErrors.email">{{formErrors.email}}</span>
+                        </app-qfc-input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <app-qfc-input>
+                            <label label class="form-control-placeholder" for="password">Password</label>
+                            <input input type="password" class="form-control pass" formControlName="password" required>
+                            <span error class="error" *ngIf="formErrors.password">{{formErrors.password}}</span>
+                        </app-qfc-input>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-button">
+                            <button type="submit" class="btn btn-primary submit">Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+const VALIDATION_MSG = {
+
+}
