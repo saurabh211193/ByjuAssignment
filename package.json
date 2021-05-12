@@ -34,7 +34,7 @@
         "mysql2": "^1.6.1",
         "node-cron": "^2.0.1",
         "node-xlsx": "^0.12.1",
-        "nodemailer": "^4.6.8",
+        "nodemailer": "^6.4.16",
         "nodemailer-html-to-text": "^3.0.0",
         "nodemailer-smtp-transport": "^2.7.4",
         "passport": "^0.4.0",
